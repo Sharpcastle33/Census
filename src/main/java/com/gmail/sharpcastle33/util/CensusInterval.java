@@ -6,9 +6,9 @@ import com.gmail.sharpcastle33.Census;
 
 public class CensusInterval extends BukkitRunnable {
 	
-	final int minutes = 10; // ADJUST THIS TO ADJUST INTERVAL TIME
+	final int INTERVAL_MINUTES = 10; // ADJUST THIS TO ADJUST INTERVAL TIME
 	
-	int time = 20 * 60 * minutes;
+	int time = 20 * 60 * INTERVAL_MINUTES;
 			// ticks * seconds * minutes
 			
 	public CensusInterval() {
@@ -27,7 +27,7 @@ public class CensusInterval extends BukkitRunnable {
 			
 			Census.cManager.storeCensusInformation();
 			
-			time = 20 * 60 * 5; // reset clock
+			time = 20 * 60 * INTERVAL_MINUTES; // reset clock
 			
 		}
 		
